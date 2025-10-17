@@ -1,6 +1,5 @@
 # qs-drugs-perms
 
-![Quasar Store]([https://img.shields.io/badge/Quasar-Companion-blue](https://www.quasar-store.com/)) ![License](https://img.shields.io/badge/License-MIT-green)
 
 A tiny, non-invasive permission compatibility helper for Quasar **qs-drugs-creator**.  
 This repository contains a small resource that exposes a permissive callback/export so server owners can map custom framework groups (owner/god/etc.) to the admin checks used by Quasar's Drugs Creator — **without modifying escrowed files**.
