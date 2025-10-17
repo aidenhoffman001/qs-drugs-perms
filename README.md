@@ -1,7 +1,5 @@
 # qs-drugs-perms
 
-# qs-drugs-perms
-
 ![Quasar Store](https://img.shields.io/badge/Quasar-Companion-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
 A tiny, non-invasive permission compatibility helper for Quasar **qs-drugs-creator**.  
