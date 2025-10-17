@@ -12,8 +12,9 @@ This repository contains a small resource that exposes a permissive callback/exp
 
 - Map your framework-specific admin/group names (owner/god/staff) to the permission check the creator expects.
 - Zero edits to Quasar's encrypted resources.
-- Lightweight and framework-aware QBCore
+- Lightweight and framework-aware QBCore or ESX
 - Starts before `qs-drugs-creator` and intercepts permission callbacks.
+- If your Framework is ESX it will automatically pick your framework and set it to that.
 
 ---
 
@@ -22,3 +23,14 @@ This repository contains a small resource that exposes a permissive callback/exp
 1. Place the folder in your resources directory, or [qs] folder
 2. <img width="199" height="62" alt="image" src="https://github.com/user-attachments/assets/37eac6c9-8749-4dc4-9124-96b71a7b5271" />
 
+
+2. Add to `server.cfg` **before** `qs-drugs-creator`:
+
+```
+ensure qb-core              # or esx
+ensure qs-drugs-perms
+ensure qs-drugs-creator
+```
+
+
+MIT © Aiden Hoffman
