@@ -42,7 +42,7 @@ end)
 
 -- ✅ Place GitHub version checker here:
 local CurrentVersion = '1.0.0' -- Match this to your actual local version
-local GitHubVersionURL = 'https://raw.githubusercontent.com/qscripts/qs-drugs/main/version.txt'
+local GitHubVersionURL = 'https://github.com/aidenhoffman001/qs-drugs-perms/blob/main/version.txt'
 
 CreateThread(function()
     PerformHttpRequest(GitHubVersionURL, function(err, text, headers)
@@ -58,3 +58,4 @@ CreateThread(function()
         end
     end, 'GET')
 end)
+
