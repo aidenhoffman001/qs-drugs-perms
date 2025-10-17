@@ -39,23 +39,3 @@ lib.callback.register('qs-drugs-creator:checkPerm', function(source)
 end)
 
 
-
--- ✅ Place GitHub version checker here:
-local CurrentVersion = '1.0.0' -- Match this to your actual local version
-local GitHubVersionURL = 'https://github.com/aidenhoffman001/qs-drugs-perms/blob/main/version.txt'
-
-CreateThread(function()
-    PerformHttpRequest(GitHubVersionURL, function(err, text, headers)
-        if err == 200 and text then
-            local remoteVersion = text:gsub("%s+", "")
-            if remoteVersion ~= CurrentVersion then
-                print(('^3[qs-drugs]^0 New version available: ^2%s^0 (Current: ^1%s^0)'):format(remoteVersion, CurrentVersion))
-            else
-                print('^2[qs-drugs]^0 You are running the latest version.')
-            end
-        else
-            print('^1[qs-drugs]^0 Failed to check for updates.')
-        end
-    end, 'GET')
-end)
-
